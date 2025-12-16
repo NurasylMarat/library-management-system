@@ -16,10 +16,16 @@ public class Main {
         book1.displayInfo();
         book2.displayInfo();
 
-        if(book1.getYear() > book2.getYear()){
+        if (book1.getYear() > book2.getYear()) {
             System.out.println(book1.getTitle() + " is newer than " + book2.getTitle());
         } else {
             System.out.println(book2.getTitle() + " is newer than " + book1.getTitle());
+        }
+
+        if (book2.isAvailable()) {
+            System.out.println("The Clean Code book is available for purchase");
+        } else {
+            System.out.println("The Clean Code book is not available for purchase");
         }
     }
 }
